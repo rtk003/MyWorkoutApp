@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/activityListFragment">
+
+    <fragment
+        android:id="@+id/activityListFragment"
+        android:name="com.app.myworkoutapp.ActivityListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_activity_list">
+        <action
+            android:id="@+id/action_itemListFragment_to_itemDetailFragment"
+            app:destination="@id/activityDetailFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_addItemFragment"
+            app:destination="@id/addactivityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityDetailFragment"
+        android:name="com.app.myworkoutapp.ActivityDetailsFragment"
+        android:label="ActivityDetailsFragment"
+        tools:layout="@layout/fragment_activity_details">
+        <argument
+            android:name="item_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_itemDetailFragment_to_addItemFragment"
+            app:destination="@id/addactivityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addactivityFragment"
+        android:name="com.app.myworkoutapp.AddActivityFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_activity">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addItemFragment_to_itemListFragment"
+            app:destination="@id/activityListFragment"
+            app:popUpTo="@id/activityListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

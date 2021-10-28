@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyWorkoutApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Workout Activities List</string>
+    <string name="second_fragment_label">Log New Activity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="item_detail_fragment_title">Activity Details</string>
+    <string name="add_fragment_title">Add Activity</string>
+    <string name="edit_fragment_title">Edit Activity</string>
+    <string name="title_req">Title Required <font color='#FF0000'>*</font></string>
+    <string name="place_name_req">Place Required <font color='#FF0000'>*</font></string>
+    <string name="date_req">Date Required <font color='#FF0000'>*</font></string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
